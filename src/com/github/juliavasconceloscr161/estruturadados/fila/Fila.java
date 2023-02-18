@@ -1,7 +1,7 @@
 package com.github.juliavasconceloscr161.estruturadados.fila;
 
-public class Fila {
-    private No refNoEntradaFinalFila;
+public class Fila<T> {
+    private No<T> refNoEntradaFinalFila;
 
     public Fila(){
         this.refNoEntradaFinalFila = null;
@@ -11,13 +11,13 @@ public class Fila {
        return refNoEntradaFinalFila == null ? true : false;
     }
 
-    public void enqueue(Object obj){
+    public void enqueue(T obj){
         No novoNo = new No(obj);
         novoNo.setRefNo(refNoEntradaFinalFila);
         refNoEntradaFinalFila = novoNo;
     }
 
-    public Object first(){
+    public T first(){
         if(!this.isEmpty()){
             No primeiroNo = refNoEntradaFinalFila;
             while(true){
@@ -28,11 +28,11 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return (T)primeiroNo.getObject();
         } return null;
     }
 
-    public Object dequeue(){
+    public T dequeue(){
         if(!this.isEmpty()){
             No primeiroNo = refNoEntradaFinalFila;
             No noAuxiliar = refNoEntradaFinalFila;
@@ -46,7 +46,7 @@ public class Fila {
                     break;
                 }
             }
-            return primeiroNo.getObject();
+            return (T)primeiroNo.getObject();
         } return null;
     }
 
