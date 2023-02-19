@@ -36,13 +36,13 @@ public class No<T> {
 
     @Override
     public String toString() {
-        return "No{" +
+        return "NoDuplo{" +
                 "conteudo=" + conteudo +
                 '}';
     }
 
     public String toStringEncadeado(){
-        String str = "No{" +
+        String str = "NoDuplo{" +
                 "conteudo=" + conteudo +
                 "}";
         if(proximoNo != null){

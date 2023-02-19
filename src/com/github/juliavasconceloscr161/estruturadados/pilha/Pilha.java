@@ -45,7 +45,7 @@ public class Pilha {
 
        while(true){
            if(noAuxiliar != null){
-               stringRetorno += "[No{dado=" + noAuxiliar.getDado() + "}]\n";
+               stringRetorno += "[NoDuplo{dado=" + noAuxiliar.getDado() + "}]\n";
                noAuxiliar = noAuxiliar.getRefNo();
            }else{
                break;

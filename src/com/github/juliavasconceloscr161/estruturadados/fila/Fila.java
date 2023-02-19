@@ -57,7 +57,7 @@ public class Fila<T> {
 
         if(refNoEntradaFinalFila != null){
             while(true){
-                stringRetorno += "[No{objeto=" + noAuxiliar.getObject() + "}]----->";
+                stringRetorno += "[NoDuplo{objeto=" + noAuxiliar.getObject() + "}]----->";
                 if(noAuxiliar.getRefNo() != null){
                     noAuxiliar = noAuxiliar.getRefNo();
                 }else{

@@ -29,7 +29,7 @@ public class No<T> {
 
     @Override
     public String toString() {
-        return "No{" +
+        return "NoDuplo{" +
                 "object=" + object +
                 '}';
     }
